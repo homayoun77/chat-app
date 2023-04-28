@@ -1,0 +1,28 @@
+.container{
+    height: 70px;
+    background-color: #cdcdcd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+.name{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #1d25c5;
+    border-radius: 5px;
+    padding: 10px;
+}
+.logout{
+    background-color: #ff0000;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 1.2rem;
+}
+.logout:hover{
+    background-color: #bb0000;
+}
