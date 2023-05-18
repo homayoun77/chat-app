@@ -26,7 +26,7 @@ function Chats() {
 
     axios.get("https://api.chatengine.io/users/me" , {
       headers:{
-        "project-id" : "5816fd62-98b8-4d49-8b70-b822731e8616",
+        "project-id" : "42477deb-51e1-4b0f-b8f3-fab644c95219",
         "user-name" : user.email,
         "user-secret" : user.uid
       }
@@ -44,7 +44,7 @@ function Chats() {
           formData.append("avatar" , avatar , avatar.name)
           axios.post("https://api.chatengine.io/users" , formData , {
             headers:{
-              "private-key" : "be009fb3-3dac-47cb-b3c7-76b0b4fda0e1"
+              "private-key" : "7d728ec7-bf1e-4f15-a9ae-e0f036e15656"
             }
           })
           .then(() => { setLoading(false) })
@@ -72,7 +72,7 @@ function Chats() {
         <Navbar logoutHandler={logoutHandler} />
 
         <ChatEngine 
-          projectID='5816fd62-98b8-4d49-8b70-b822731e8616'
+          projectID='42477deb-51e1-4b0f-b8f3-fab644c95219'
           height='calc(100vh - 70px)'
           userName={user.email}
           userSecret={user.uid}
